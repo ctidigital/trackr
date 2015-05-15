@@ -1,0 +1,15 @@
+<ion-popover-view>
+    <ion-header-bar>
+        <h1 class="title heading--scooter">{{issue.key}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <h3>
+            <timer interval="1000" autostart="false">{{hours}}:{{minutes}}:{{seconds}}</timer>
+        </h3>
+        <div class="button-bar tracker--controls">
+            <button class="button-clear"><i class="icon ion-pause"></i></button>
+            <button class="button-clear"><i class="icon ion-stop"></i></button>
+        </div>
+
+    </ion-content>
+</ion-popover-view>

@@ -1,0 +1,11 @@
+{
+    "name": "trackr.config",
+    "constants": {
+        "env": {
+            "api": {
+                "baseUrl": "http://localhost:8100",
+                "endpoint": "/api"
+            }
+        }
+    }
+}

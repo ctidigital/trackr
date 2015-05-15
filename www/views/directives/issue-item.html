@@ -1,0 +1,20 @@
+<div class="issue" on-hold="showOptions()">
+    <div class="row row-no-padding">
+        <div class="col col-90">
+            <div class="row">
+                <div class="col col-65"><h2><img ng-src="{{item.fields.issuetype.iconUrl}}" /> {{item.key}}</h2></div>
+                <div class="col col-25"><p class="status status--{{item.fields.status.statusCategory.colorName}}">{{item.fields.status.name}}</p></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">{{item.fields.summary}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col col-10 col-center">
+            <button class="button-clear more-menu" ng-click="showOptions()">
+                <i class="icon ion-android-more-vertical"></i>
+            </button>
+        </div>
+    </div>
+</div>

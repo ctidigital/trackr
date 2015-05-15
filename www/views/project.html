@@ -1,0 +1,67 @@
+<ion-view title="{{project.name}}" class="project">
+    <ion-content scroll="false" class="has-header-false">
+        <ion-tabs class="tabs-striped tabs-top tabs-background-stable tabs-color-dark">
+            <ion-tab title="Issues" sref="project.issues">
+                <ion-content class="ignore-pane project--issues">
+                    <ion-list class="fix-list-padding">
+                        <issues collection="issues"></issues>
+                    </ion-list>
+                </ion-content>
+            </ion-tab>
+            <ion-tab title="Details">
+                <ion-content class="ignore-pane project--details">
+                    <ion-list class="fix-list-padding">
+                        <div class="item item-divider">Lead</div>
+                        <ion-item class="item-avatar">
+                            <img ng-src="{{project.lead.avatarUrls['48x48']}}" />
+                            <h2>{{project.lead.displayName}}</h2>
+                            <p>{{project.lead.key}}@ctidigital.com</p>
+                        </ion-item>
+                        <div class="item item-divider">General</div>
+                        <ion-item class="row">
+                            <div class="col">
+                                <h3 class="title bold body--cody-gray">Name:</h3>
+                            </div>
+                            <div class="col">
+                                <p>{{project.name}}</p>
+                            </div>
+                        </ion-item>
+                        <ion-item class="row">
+                            <div class="col">
+                                <h3 class="title bold body--cody-gray">Key:</h3>
+                            </div>
+                            <div class="col">
+                                <p>{{project.key}}</p>
+                            </div>
+                        </ion-item>
+                        <div class="item item-divider">Project Category</div>
+                        <ion-item class="row">
+                            <div class="col">
+                                <h3 class="title bold body--cody-gray">id:</h3>
+                            </div>
+                            <div class="col">
+                                <p>{{project.projectCategory.id}}</p>
+                            </div>
+                        </ion-item>
+                        <ion-item class="row">
+                            <div class="col">
+                                <h3 class="title bold body--cody-gray">Name:</h3>
+                            </div>
+                            <div class="col">
+                                <p>{{project.projectCategory.name}}</p>
+                            </div>
+                        </ion-item>
+                        <ion-item class="row">
+                            <div class="col">
+                                <h3 class="title bold body--cody-gray">Description:</h3>
+                            </div>
+                            <div class="col">
+                                <p>{{project.projectCategory.description}}</p>
+                            </div>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-tab>
+        </ion-tabs>
+    </ion-content>
+</ion-view>

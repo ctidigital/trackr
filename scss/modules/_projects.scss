@@ -1,0 +1,31 @@
+.project {
+  .project--issues {
+    .list {
+      .item {
+        padding: 8px;
+
+        p.status {
+          font-size: 10px;
+        }
+
+        h3 {
+          word-wrap: break-word;
+          overflow: visible;
+          white-space: normal !important;
+        }
+      }
+    }
+  }
+
+  .project--details {
+    .list {
+      .item {
+        p {
+          word-wrap: break-word;
+          overflow: visible;
+          white-space: normal !important;
+        }
+      }
+    }
+  }
+}

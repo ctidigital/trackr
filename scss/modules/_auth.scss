@@ -1,0 +1,16 @@
+.auth {
+  background-size: cover;
+  background: url('/img/background.jpg') no-repeat right top;
+
+  .branding {
+    margin: 20% 0;
+
+    img {
+      width: 50%;
+      text-align: center;
+      vertical-align: middle;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

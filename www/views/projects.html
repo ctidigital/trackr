@@ -1,0 +1,18 @@
+<ion-view title="Projects">
+    <ion-content>
+        <ion-list class="fix-list-padding">
+            <div class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search" ng-model="filter">
+                </label>
+            </div>
+            <ion-item collection-repeat="project in projects | filter:filter" class="item-avatar item-avatar-left" ui-sref="app.project({id: project.id})">
+                <img ng-src="{{project.avatarUrls['48x48']}}" />
+                <h2 class="title title--senary">{{project.name}}</h2>
+                <p><strong>Lead:</strong> {{project.lead.displayName}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+

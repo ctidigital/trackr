@@ -1,0 +1,11 @@
+.bar-header {
+  &.bar-subheader {
+    .title {
+      font-weight: normal;
+    }
+  }
+
+  .title {
+    font-weight: 800;
+  }
+}

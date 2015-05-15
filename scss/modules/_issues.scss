@@ -1,0 +1,37 @@
+.issue {
+  .status {
+    text-align: center;
+    padding: 3px 5px;
+    @include border-radius(3px);
+    background-color: #cacaca;
+    color: #000;
+    max-width: 100px;
+    float: right;
+
+    &.status--medium-gray {
+      background-color: #919191;
+      color: #000;
+    }
+
+    &.status--blue-gray {
+      background-color: #4a6785;
+      color: #fff;
+    }
+
+    &.status--green, &.status--lozenge-green {
+      background-color: #14892c;
+      color: #fff;
+    }
+
+    &.status--yellow {
+      background-color: #ffd351;
+      color: #594300;
+    }
+  }
+
+  .more-menu {
+    float: right;
+    font-size: 150%;
+    color: $bayoux;
+  }
+}

@@ -1,0 +1,36 @@
+.has-header-false {
+  top: 0;
+}
+
+.ignore-pane {
+  &.has-tabs-top {
+    top: 93px !important;
+  }
+}
+
+.fix-list-padding {
+  .list {
+    .item:last-child {
+      margin-bottom: 44px; // 3 x 44px heading height
+    }
+  }
+}
+
+.offset-tab-with-heading {
+  .title {
+    &.header-item {
+      top: 5px;
+    }
+  }
+
+  .button.back-button {
+    margin-top: 5px;
+  }
+}
+
+.tabs-striped.tabs-color-dark{
+  .tab-item.tab-item-active {
+    color: #3bb9d7;
+    border-color: #3bb9d7;
+  }
+}

@@ -1,0 +1,36 @@
+<ion-pane>
+    <ion-side-menus>
+        <!-- Left menu -->
+        <ion-side-menu side="left">
+            <ion-list>
+                <ion-item style="background-color: #161516; height: 120px;" class="item account item-avatar hero">
+                    <img src="https://secure.gravatar.com/avatar/06c87bb7318567482d5cccb57b801cc9?d=mm&s=50"/>
+                    <h2 class="title bold" style="color: #fff;">{{user.displayName}}</h2>
+                    <p class="normal" style="color: #eee;">{{user.emailAddress}}</p>
+                    <div class="background" style="background-image: url('https://secure.gravatar.com/avatar/06c87bb7318567482d5cccb57b801cc9?d=mm&s=300');"></div>
+                    <div class="account--actions">
+                        <i class="icon ion-gear-a"></i>
+                    </div>
+                </ion-item>
+                <ion-item ui-sref="app.projects" ng-click="toggleMenu()">Projects</ion-item>
+                <ion-item ui-sref="app.tracker" ng-click="toggleMenu()">Tracker</ion-item>
+                <ion-item  ng-click="toggleMenu()">Worksheets</ion-item>
+            </ion-list>
+        </ion-side-menu>
+
+        <ion-side-menu-content>
+            <ion-header-bar class="bar-positive">
+                <button class="button button-icon icon ion-navicon color-white" ng-click="toggleMenu()" title="Menu"></button>
+                <h1 class="title">Trackr</h1>
+                <div class="buttons">
+                    <timer-icon></timer-icon>
+                </div>
+            </ion-header-bar>
+            <ion-nav-bar class="bar-stable bar-subheader offset-tab-with-heading">
+                <ion-nav-back-button class="button-clear">
+                </ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view name="content"></ion-nav-view>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</ion-pane>

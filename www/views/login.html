@@ -1,0 +1,20 @@
+<ion-pane>
+    <ion-content scroll="false" class="auth padding">
+        <div class="branding">
+            <img src="img/logo.png" />
+        </div>
+
+        <form name="userForm" class="padding" ng-submit="login(userForm.$valid)" novalidate>
+            <p ng-show="error" class="help-block">{{errorMessage}}</p>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="username" ng-model="auth.username" required ng-minlength="1">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="password" ng-model="auth.password" required ng-minlength="1">
+                </label>
+            </div>
+            <button class="button button-block button-positive" ng-disabled="userForm.$invalid">Login</button>
+        </form>
+    </ion-content>
+</ion-pane>

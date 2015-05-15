@@ -3,10 +3,17 @@
   "app_id": "",
   "gulpStartupTasks": [
     "sass",
-    "watch"
+    "watch",
+    "local"
   ],
   "watchPatterns": [
     "www/**/*",
     "!www/lib/**/*"
-  ]
+  ],
+  "proxies": [
+      {
+        "path": "/api",
+        "proxyUrl": ""
+      }
+    ]
 }

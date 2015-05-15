@@ -1,0 +1,11 @@
+{
+    "name": "trackr.config",
+    "constants": {
+        "env": {
+            "api": {
+                "baseUrl": "",
+                "endpoint": ""
+            }
+        }
+    }
+}

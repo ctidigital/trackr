@@ -38,8 +38,21 @@ angular.module('trackr', [
         .state('app.project', {
             url: '/project/:id',
             resolve: {
-                project: function (projects, $stateParams) {
-                    return projects.getProject($stateParams.id);
+                projectCollection: function ($stateParams, $q, $ionicLoading, projects, issues) {
+                    var promises = {
+                            project: projects.getProject($stateParams.id),
+                            issueCollection: issues.forProjectKey($stateParams.id)
+                        },
+                        result = $q.all(promises);
+                        result.then(function () {
+                            $ionicLoading.hide();
+                        });
+
+                    $ionicLoading.show({
+                        template: '<h5>Loading project</h5><ion-spinner icon="ripple" class="spinner-positive"></ion-spinner>'
+                    });
+
+                    return result;
                 }
             },
             views: {

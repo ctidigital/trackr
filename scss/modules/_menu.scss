@@ -1,9 +1,9 @@
 .menu {
   .item.account {
     &.hero {
-      padding-top: 60px;
+      padding-top: remify(60px);
       background-color: $stack;
-      height: 120px;
+      height: remify(120px);
 
       h2.title {
         color: white;
@@ -14,7 +14,7 @@
       }
 
       img:first-child {
-        top: 60px !important;
+        top: remify(60px) !important;
       }
 
       .background {
@@ -26,7 +26,7 @@
         bottom:-15px;
         left:-15px;
         background-size: cover;
-        height: 140px;
+        height: remify(140px);
         background-position: 0 50%;
         -webkit-filter: blur(15px);
         filter: blur(15px);
@@ -34,8 +34,8 @@
 
       .account--actions {
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: remify(15px);
+        right: remify(20px);
         color: #fff;
 
         i {

@@ -1,11 +1,11 @@
 .issue {
   .status {
     text-align: center;
-    padding: 3px 5px;
+    padding: remify(3px) remify(5px);
     @include border-radius(3px);
     background-color: #cacaca;
     color: #000;
-    max-width: 100px;
+    max-width: remify(100px);
     float: right;
 
     &.status--medium-gray {

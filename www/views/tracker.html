@@ -1,10 +1,10 @@
 <ion-view title="Tracker">
     <ion-content>
-        <form>
-            <div class="list">
+        <form class="padding">
+            <div class="list padding">
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">issue</span>
-                    <ion-autocomplete ng-model="model" placeholder="issue key"/>
+                    <ion-autocomplete ng-model="model" placeholder="issue key" template-url="views/directives/tracker-autocomplete.html"/>
                 </label>
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">date</span>
@@ -14,8 +14,8 @@
                     <span class="input-label">description</span>
                     <textarea placeholder="description"></textarea>
                 </label>
+                <button class="button button-block button-positive disabled">Start Tracker</button>
             </div>
-            <button class="button button-full button-positive disabled">Start Tracker</button>
         </form>
     </ion-content>
 </ion-view>

@@ -2,26 +2,7 @@
 /**
  * Calculates REM based on the base font size
  */
-@function remify($px, $baseline-px: $font-size-base) {
-  $baseline-rem: $baseline-px / 1rem;
-
-  @if $px == 0 {
-    @return 0;
-  }
-
-  @if type-of(px) == "number" {
-    @return $px / $baseline-rem;
-  } @else {
-    $rems: ();
-
-    @each $value in $px {
-      @if $value == 0 {
-        $rems: append($rems, $value);
-      } @else {
-        $rems: append($rems, ($value / $baseline-rem));
-      }
-    }
-
-    @return $rems;
-  }
+@function remify($px) {
+  $remSize: $px / 16px;
+  @return #{$remSize}rem;
 }

@@ -4,14 +4,14 @@
 
 .ignore-pane {
   &.has-tabs-top {
-    top: 93px !important;
+    top: remify(93px) !important;
   }
 }
 
 .fix-list-padding {
   .list {
     .item:last-child {
-      margin-bottom: 44px; // 3 x 44px heading height
+      margin-bottom: remify(44px); // 3 x 44px heading height
     }
   }
 }
@@ -19,12 +19,12 @@
 .offset-tab-with-heading {
   .title {
     &.header-item {
-      top: 5px;
+      top: remify(5px);
     }
   }
 
   .button.back-button {
-    margin-top: 5px;
+    margin-top: remify(5px);
   }
 }
 

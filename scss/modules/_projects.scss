@@ -2,10 +2,10 @@
   .project--issues {
     .list {
       .item {
-        padding: 8px;
+        padding: remify(8px);
 
         p.status {
-          font-size: 10px;
+          font-size: remify(10px);
         }
 
         h3 {

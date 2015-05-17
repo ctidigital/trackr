@@ -1,6 +1,6 @@
 .auth {
   background-size: cover;
-  background: url('/img/background.png') no-repeat right top;
+  background: $viking url('../img/background.png') no-repeat bottom right;
 
   .branding {
     margin: 20% 0;

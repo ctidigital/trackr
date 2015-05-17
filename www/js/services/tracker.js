@@ -8,7 +8,7 @@ angular.module('trackr')
         var service = {
             EVENTS: {
                 START: 'tracker.start',
-                STOP: 'tracker.stop',
+                STOP:  'tracker.stop',
                 PAUSE: 'tracker.pause'
             },
             tracking: null

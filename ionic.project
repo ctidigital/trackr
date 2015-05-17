@@ -13,7 +13,7 @@
   "proxies": [
       {
         "path": "/api",
-        "proxyUrl": "https://jira.ctidigital.com/rest/api/2"
+        "proxyUrl": ""
       }
     ]
 }

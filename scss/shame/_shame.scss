@@ -4,7 +4,7 @@
 
 .ignore-pane {
   &.has-tabs-top {
-    top: remify(93px) !important;
+    top: remify(92px) !important;
   }
 }
 
@@ -16,21 +16,29 @@
   }
 }
 
-.offset-tab-with-heading {
-  .title {
-    &.header-item {
-      top: remify(5px);
-    }
-  }
-
-  .button.back-button {
-    margin-top: remify(5px);
-  }
-}
 
 .tabs-striped.tabs-color-dark{
   .tab-item.tab-item-active {
     color: #3bb9d7;
     border-color: #3bb9d7;
+  }
+}
+
+/**
+* Platform specific overrides for iOS
+*/
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset.search-filter .item-input-wrapper {
+    margin-top: 0 !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header.has-header-false, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader.has-header-false {
+  top: remify(-1px) !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) {
+  .ignore-pane {
+    &.has-tabs-top {
+      top: remify(112px) !important;
+    }
   }
 }
